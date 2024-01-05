@@ -4,10 +4,14 @@ import gregtech.api.gui.GuiTextures;
 import gregtech.api.gui.widgets.ProgressWidget;
 import gregtech.api.recipes.RecipeMap;
 import gregtech.api.recipes.RecipeMaps;
+import gregtech.api.recipes.builders.AssemblyLineRecipeBuilder;
 import gregtech.api.recipes.builders.FuelRecipeBuilder;
 import gregtech.api.recipes.builders.PrimitiveRecipeBuilder;
 import gregtech.api.recipes.builders.SimpleRecipeBuilder;
 import gregtech.api.recipes.ingredients.GTRecipeInput;
+import gregtech.api.recipes.machines.RecipeMapAssemblyLine;
+import gregtech.api.util.AssemblyLineManager;
+import gregtech.api.recipes.*;
 import gregtech.core.sound.GTSoundEvents;
 import gregtechfoodoption.recipe.GTFORecipeMaps;
 import supersymmetry.api.gui.SusyGuiTextures;
@@ -320,6 +324,8 @@ public class SuSyRecipeMaps {
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, ProgressWidget.MoveType.HORIZONTAL)
             .setSound(GTSoundEvents.CHEMICAL_REACTOR)
             .setSmallRecipeMap(MIXER_RECIPES);
+
+    public static final RecipeMap<SimpleRecipeBuilder> WEAPONS_ASSEMBLY_LINE_RECIPES = new RecipeMap<>("weapons_assembly_line", 12, 1, 3, 0, new SimpleRecipeBuilder(), false);
 
     public static void init(){
         RecipeMaps.SIFTER_RECIPES.setMaxFluidInputs(1);

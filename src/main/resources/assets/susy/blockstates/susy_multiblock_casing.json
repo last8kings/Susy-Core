@@ -38,6 +38,18 @@
       "textures" : {
         "all" : "gregtech:blocks/multiblock_casing/drone_pad"
       }
+    },
+    "variant=weapon_assembly_control" : {
+      "model" : "minecraft:cube_all",
+      "textures" : {
+        "all" : "gregtech:blocks/multiblock_casing/weapon_assembly_control"
+      }
+    },
+    "variant=weapon_assembly_line" : {
+      "model" : "minecraft:cube_all",
+      "textures" : {
+        "all" : "gregtech:blocks/multiblock_casing/weapon_assembly_line"
+      }
     }
   }
 }
